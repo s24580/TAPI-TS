@@ -1,26 +1,21 @@
-import {Piesek} from "./pracownikTypes.js"
+import { Priorytety } from "./otherTypes.js";
 
-type Raport={
-    efektywność:number
+export type Raport = {
+  efektywność: number;
+  priorytet: Priorytety;
+};
 
-}
+type RaportPracownika = {
+  obniżonaEfektywność: boolean;
+  spadekPensji: number;
+};
 
-type RaportPracownika ={
-    obniżonejEfektywności: boolean
-    spadekPensji: number
-}
+type RaportPracowników = {
+  id: RaportPracownika;
+};
 
-type RaportPracowników  ={
-    
-
-}
-
-type RaportPieseczka =  {
-    szczekanie:boolean
-    isPies:
-    aKtoToJestTakimSłodkimPieseczkiem:
-}
-
-enum Prawda{
-    
-}
+type RaportPieseczka = {
+  szczekanie: true;
+  isPies: true;
+  aKtoToJestTakimSłodkimPieseczkiem: true;
+};
